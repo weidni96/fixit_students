@@ -39,7 +39,7 @@ describe('REST API', () => {
         response.payload.should.be.a('string');
         let payload = JSON.parse(response.payload);
         payload.should.be.an('object').and.contain.keys('statusCode', 'error');
-        payload.error.should.be.a('string').and.equal('Bad Request');
+        payload.error.should.be.a('string').and.equal('Bad');
       });
     });
 
@@ -61,7 +61,7 @@ describe('REST API', () => {
       opt.url += 'huw/fairphone17658/5';
       return server.inject(opt).then((response) => {
         response.should.be.an('object').and.contain.keys('statusCode', 'payload');
-        response.statusCode.should.equal(200);
+        response.statusCode.should.equal(230);
         response.payload.should.be.a('string');
         let payload = JSON.parse(response.payload);
         payload.should.be.an('object').and.contain.keys('fairphone17658');
