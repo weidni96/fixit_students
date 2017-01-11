@@ -1,11 +1,10 @@
 # Microservice Template #
-[![Build Status](https://travis-ci.org/slidewiki/microservice-template.svg?branch=master)](https://travis-ci.org/slidewiki/microservice-template)
-[![License](https://img.shields.io/badge/License-MPL%202.0-green.svg)](https://github.com/slidewiki/microservice-template/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/rmeissn/fixit_students.svg?branch=master)](https://travis-ci.org/rmeissn/fixit_students)
+[![License](https://img.shields.io/badge/License-MPL%202.0-green.svg)](https://github.com/rmeissn/fixit_students/blob/master/LICENSE)
 [![Language](https://img.shields.io/badge/Language-Javascript%20ECMA2015-lightgrey.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Framework](https://img.shields.io/badge/Framework-NodeJS%206.9-blue.svg)](https://nodejs.org/)
 [![Webserver](https://img.shields.io/badge/Webserver-Hapi%2016-blue.svg)](http://hapijs.com/)
-[![LinesOfCode](https://img.shields.io/badge/LOC-398-lightgrey.svg)](https://github.com/slidewiki/microservice-template/blob/master/application/package.json)
-[![Coverage Status](https://coveralls.io/repos/github/slidewiki/microservice-template/badge.svg?branch=master)](https://coveralls.io/github/slidewiki/microservice-template?branch=master)
+[![LinesOfCode](https://img.shields.io/badge/LOC-398-lightgrey.svg)](https://github.com/rmeissn/fixit_students/blob/master/package.json#L16)
 
 This repository contains code of a NodeJS based Microservice. The service has some errors that shall be fixed by students of the Leipzig University, course SWT-16.
 
@@ -17,16 +16,16 @@ Run the following commands on your command-line and have a look at the output.
 
 ```
 npm run lint
-npm run test
+npm run test:integration
 npm run coverage
 npm run countLOC
 ```
 
-If you want to dig through the code, have a look at the file [server.js](https://github.com/slidewiki/Microservice-Template/blob/master/server.js), that is the main routine of this service. Follow the **require(...)** statements to dig trough the entire code in the right order.
+If you want to dig through the code, have a look at the file [server.js](https://github.com/rmeissn/fixit_students/blob/master/server.js), that is the main routine of this service. Follow the **require(...)** statements to dig trough the entire code in the right order.
 
-If you want to have a look at **tests**, head over to the folder [tests/](https://github.com/slidewiki/Microservice-Template/tree/master/tests). We're using Mocha and Chai for our purposes.
+If you want to have a look at **tests**, head over to the folder [tests/](https://github.com/rmeissn/fixit_students/tree/master/tests). We're using Mocha and Chai for our purposes.
 
-Since we're developing our application with NodeJS, we're using [npm](https://docs.npmjs.com/) as a **task runner**. Have a look at the file's [/package.json](https://github.com/slidewiki/Microservice-Template/blob/master/package.json) script section to obtain an overview of available commands. Some are:
+Since we're developing our application with NodeJS, we're using [npm](https://docs.npmjs.com/) as a **task runner**. Have a look at the file's [/package.json](https://github.com/rmeissn/fixit_students/blob/master/package.json) script section to obtain an overview of available commands. Some are:
 
 ```
 # Run syntax check and lint your code
@@ -40,7 +39,7 @@ npm start
 ...
 ```
 
-You want to **checkout this cool service**? Simply start the service by runningy `npm start` and head over to: [http://localhost:3000/documentation](http://localhost:3000/documentation). We're using  [swagger](https://www.npmjs.com/package/hapi-swagger) to have this super cool API discrovery/documentation tool. BTW.: Did you already discoverd the super easy swagger integration inside [/routes.js](https://github.com/slidewiki/Microservice-Template/blob/master/routes.js)? Tags 'api' and 'description' were everything we needed to add.
+You want to **checkout this cool service**? Simply start the service by runningy `npm start` and head over to: [http://localhost:3000/documentation](http://localhost:3000/documentation). We're using  [swagger](https://www.npmjs.com/package/hapi-swagger) to have this super cool API discrovery/documentation tool. BTW.: Did you already discoverd the super easy swagger integration inside [/routes.js](https://github.com/rmeissn/fixit_students/blob/master/routes.js)? Tags 'api' and 'description' were everything we needed to add.
 
 ### What's about Continuous Integration/Delivery? ###
 ---
