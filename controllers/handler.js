@@ -33,7 +33,7 @@ module.exports = {
       else {
         delete users[request.params.user][request.params.item];
         reply(users[request.params.user]);
-      }
+      } 
     } catch (error) {
       request.log('error', error);
       reply(boom.badImplementation());
