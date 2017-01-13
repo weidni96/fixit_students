@@ -46,7 +46,7 @@ module.exports = {
         reply(boom.notFound());
       else if (!users[request.params.user].hasOwnProperty(request.params.item))
         reply(boom.notFound());
-      else if (request.params.quantity === 0) {
+      else if (request.params.quantity == 0) {
         delete users[request.params.user][request.params.item];
         reply(users[request.params.user]);
       } else {
